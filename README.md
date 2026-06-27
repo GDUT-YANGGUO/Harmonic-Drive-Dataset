@@ -49,8 +49,7 @@ The industrial robot vibration test bench includes a six-axis industrial robot, 
 
 The data-driven online intelligent fault diagnosis platform for harmonic drive mainly consists of an industrial robot (Model: RB08), control and servo systems, normal and fault harmonic drives, RS485 Fieldbus, laptop, and servo system online data acquisition software (the sampling frequency is 800Hz)
 
-
-
+<img width="496" height="372" alt="image" src="https://github.com/user-attachments/assets/0c66c16c-dc91-46df-bbd3-7bffa9acb215" />
 
 Fig. 3.  Industrial robot test bench.
 
@@ -62,7 +61,20 @@ Fig. 4.  Schematic diagram of the mechanical structure of an industrial robot.
 
 The schematic diagram of the industrial robot is shown in Fig. 5. The 1st axis, the 2nd axis, and the 3rd axis are driven by RV gears. The RV reducer has the characteristics of simple structure, high reliability, and few failures. The harmonic drives of the 4th axis, 5th axis and, 6th axis adopts the principle of harmonic transmission instead of gear transmission. The harmonic drive is composed of a wave generator, flexspline, and circular spline. It relies on the elastic deformation of the flexspline to realize movement transmission. Besides, the harmonic drive is extremely sensitive to the manufacturing process and assembly errors. Therefore, multiple harmonic drives of industrial robots sometimes will cause abnormal vibrations at the same time.
 
-The physical structures of the various types of harmonic drives in Fig. 5 are different, so their fault characteristics are also different. We use the frequency in Table II to observe their motion characteristics. The frequency spectrum of the collected vibration signal contains the frequency components of various parts, such as motor, pulley, camshaft, flexspline, and circular spline. The various input speeds of the motor will run under 3 different levels of payload (0/3/8Kg). In Table II, the motors used for driving have four speeds of 1247/2492/3739/4985 (r/min), corresponding to L/M/H/S respectively. The calculation formula of the frequency spectral components of each type of harmonic drive can refer to the literature [4]. These frequency components will be used for subsequent neural network analysis. The different types of harmonic drives are respectively installed in the 4th, 5th, and 6th axis of the industrial robot, and the reduction ratio of these products is 50/100/50 respective. Due to the consideration of external output connection (belt and pulley), the total revised reduction ratio of these products is 74.538/84.1666/50 respective.
+The physical structures of the various types of harmonic drives in Fig. 4 are different, so their fault characteristics are also different. We use the frequency in Table II to observe their motion characteristics. The frequency spectrum of the collected vibration signal contains the frequency components of various parts, such as motor, pulley, camshaft, flexspline, and circular spline. The various input speeds of the motor will run under 3 different levels of payload (0/3/8Kg). In Table II, the motors used for driving have four speeds of 1247/2492/3739/4985 (r/min), corresponding to L/M/H/S respectively. These frequency components will be used for subsequent neural network analysis. The different types of harmonic drives are respectively installed in the 4th, 5th, and 6th axis of the industrial robot, and the reduction ratio of these products is 50/100/50 respective. Due to the consideration of external output connection (belt and pulley), the total revised reduction ratio of these products is 74.538/84.1666/50 respective.
+
+### Sensors for Servo Systems — Multimodal Data
+
+| Sensor | Data Type | Unit |
+| :--- | :--- | :---: |
+| **Electromotor Encoder** | Position command value | Pulse |
+| | Position actual value | Pulse |
+| | Position tracking error actual value | Pulse |
+| | Actual speed feedback value | r/min |
+| | Feedforward speed command value | r/min |
+| **Hall Current Sensor** | Torque command value | mNm |
+| | Actual torque observations | mNm |
+| | Torque current command value | mArms |
 
 Dataset 2 can be used for:
 - **Exp. 3. Compound Fault Diagnosis**
