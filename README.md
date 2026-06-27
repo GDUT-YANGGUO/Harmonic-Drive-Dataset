@@ -1,5 +1,7 @@
 # Harmonic-Drive-Dataset
 
+Harmonic drives are precision components essential for motion performance in industrial robots, yet their fault diagnosis remains underdeveloped due to a lack of comprehensive reviews and publicly available real-world data. Existing studies often focus on individual components or artificially induced faults, which do not fully represent the complex operational behavior and fault modes of complete drives under actual working conditions. To address these gaps, this paper presents a systematic review of intelligent fault diagnosis and prognostics methods for harmonic drives. Furthermore, we release GD-HDD, among the first open-source, multimodal fault datasets for industrial robotic harmonic drives, collected and validated in collaboration with manufacturers. The dataset includes synchronized vibration, servo motor, and high-precision metrology data across 12 operating conditions, covering 7 common faults, 3 dual compound faults, and 1 triple compound fault, along with associated technical documentation. By integrating a methodological review with a real-world benchmark dataset, this work aims to accelerate research and deployment of reliable health management systems for harmonic drives. 
+
 The Harmonic-Drive-Dataset mainly consists of 2 datasets, and the data types, sampling frequencies, fault types, and sample quantities of these 2 datasets are different.
 
 ## Dataset 1
