@@ -22,7 +22,7 @@ Dataset 1 can be used for:
 - **Exp. 1. Binary Health Classification**
 - **Exp. 2. Multi-Class Fault Identification Under Noise**
 
-📥 **Download link**: [点击下载 Dataset 1](http://xxxxx1122) （提取码：xxxx）
+📥 **Download link**: [Download Dataset 1](http://xxxxx1122) 
 
 ---
 
@@ -33,7 +33,7 @@ Dataset 2 can be used for:
 - **Exp. 4. Semi-Supervised and Few-Shot Learning**
 - **Exp. 5. Multimodal Learning with Missing Modalities**
 
-📥 **Download link**: [点击下载 Dataset 2](http://xxxxx1122) （提取码：xxxx）
+📥 **Download link**: [Download Dataset 2](http://xxxxx1122) 
 
 ---
 
