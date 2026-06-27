@@ -19,6 +19,7 @@ By integrating a methodological review with a real-world benchmark dataset, this
 ## 📊 Dataset 1
 
 - **Setup and Data Collection**
+
 The test platform includes an industrial robot with a rated load of 8 kg, 8 harmonic drives, an SKF vibration analyzer, 3 vibration acceleration sensors (SKF MODEL CMSS2200), and a laptop. The robot vibration experiment platform is shown in Fig. 1. The SKF vibration analyzer is set to Hanning-window sampling. The sampling frequency is 512 Hz and the lower bound cut off frequency is 0.1Hz.The experimental studies only focus on the operating state of the harmonic drive installed on the fifth axis of the robot. 
 The fifth axis is used to perform a reciprocating rotary motion. A schematic diagram of the transmission chain of the fifth axis of the industrial robot is given in Fig. 2. The transmission route of Joint 5 of the industrial robot is that the motor drives the pulley, and transmits the motion to the harmonic drive through the belt drive, and finally transmits the motion to the tool end connected to the harmonic drive. The three acceleration sensors are respectively fixed on the end-load of the robot according to the mutually orthogonal directions of X, Y, and Z, and are used to record the vibration acceleration data of the end of the industrial robot during the movement.
 
@@ -41,6 +42,27 @@ Dataset 1 can be used for:
 ---
 
 ## 📊 Dataset 2
+
+- **Setup of the Experimental platform**
+
+The industrial robot vibration test bench includes a six-axis industrial robot, a servo controller, a SKF vibration analyzer (System: IMx-P), three vibration acceleration sensors (Model: CMSS2200), and a personal computer, as shown in Fig. 3. Three vibration acceleration sensors are installed orthogonally at the end of the industrial robot to collect the vibration signal of the robot. The 4th, 5th and 6th axes of industrial robots all use harmonic drives. During the experiment, the range of motion angles of the 4th, 5th, and 6th axes are ±1050, ±1230, and ±1100 respectively. The sampling frequency is 2560Hz.
+
+The data-driven online intelligent fault diagnosis platform for harmonic drive mainly consists of an industrial robot (Model: RB08), control and servo systems, normal and fault harmonic drives, RS485 Fieldbus, laptop, and servo system online data acquisition software (the sampling frequency is 800Hz)
+
+
+
+
+Fig. 3.  Industrial robot test bench.
+
+To more clearly express the mechanical and physical mechanism of the 6-axis tandem industrial robot in the vibration test bench, the structure diagram of the whole machine is shown as follow:
+
+<img width="447" height="247" alt="image" src="https://github.com/user-attachments/assets/2123eb32-1229-4bf6-a705-501717b7616d" />
+
+Fig. 4.  Schematic diagram of the mechanical structure of an industrial robot.
+
+The schematic diagram of the industrial robot is shown in Fig. 5. The 1st axis, the 2nd axis, and the 3rd axis are driven by RV gears. The RV reducer has the characteristics of simple structure, high reliability, and few failures. The harmonic drives of the 4th axis, 5th axis and, 6th axis adopts the principle of harmonic transmission instead of gear transmission. The harmonic drive is composed of a wave generator, flexspline, and circular spline. It relies on the elastic deformation of the flexspline to realize movement transmission. Besides, the harmonic drive is extremely sensitive to the manufacturing process and assembly errors. Therefore, multiple harmonic drives of industrial robots sometimes will cause abnormal vibrations at the same time.
+
+The physical structures of the various types of harmonic drives in Fig. 5 are different, so their fault characteristics are also different. We use the frequency in Table II to observe their motion characteristics. The frequency spectrum of the collected vibration signal contains the frequency components of various parts, such as motor, pulley, camshaft, flexspline, and circular spline. The various input speeds of the motor will run under 3 different levels of payload (0/3/8Kg). In Table II, the motors used for driving have four speeds of 1247/2492/3739/4985 (r/min), corresponding to L/M/H/S respectively. The calculation formula of the frequency spectral components of each type of harmonic drive can refer to the literature [4]. These frequency components will be used for subsequent neural network analysis. The different types of harmonic drives are respectively installed in the 4th, 5th, and 6th axis of the industrial robot, and the reduction ratio of these products is 50/100/50 respective. Due to the consideration of external output connection (belt and pulley), the total revised reduction ratio of these products is 74.538/84.1666/50 respective.
 
 Dataset 2 can be used for:
 - **Exp. 3. Compound Fault Diagnosis**
