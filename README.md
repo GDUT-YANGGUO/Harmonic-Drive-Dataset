@@ -18,6 +18,20 @@ By integrating a methodological review with a real-world benchmark dataset, this
 
 ## 📊 Dataset 1
 
+- **Setup and Data Collection**
+The test platform includes an industrial robot with a rated load of 8 kg, 8 harmonic drives, an SKF vibration analyzer, 3 vibration acceleration sensors (SKF MODEL CMSS2200), and a laptop. The robot vibration experiment platform is shown in Fig. 1. The SKF vibration analyzer is set to Hanning-window sampling. The sampling frequency is 512 Hz and the lower bound cut off frequency is 0.1Hz.The experimental studies only focus on the operating state of the harmonic drive installed on the fifth axis of the robot. 
+The fifth axis is used to perform a reciprocating rotary motion. A schematic diagram of the transmission chain of the fifth axis of the industrial robot is given in Fig. 2. The transmission route of Joint 5 of the industrial robot is that the motor drives the pulley, and transmits the motion to the harmonic drive through the belt drive, and finally transmits the motion to the tool end connected to the harmonic drive. The three acceleration sensors are respectively fixed on the end-load of the robot according to the mutually orthogonal directions of X, Y, and Z, and are used to record the vibration acceleration data of the end of the industrial robot during the movement.
+
+<img width="525" height="393" alt="image" src="https://github.com/user-attachments/assets/e94332a0-6249-4f44-8eff-25f613d5ee5f" />
+
+Fig. 1.  Robot vibration experiment platform.
+
+<img width="452" height="195" alt="image" src="https://github.com/user-attachments/assets/b4ed2c65-eb33-4e2a-91b8-58495db73ab8" />
+
+Fig. 2.  Schematic diagram of the fifth axis of the robot.
+
+The loads to be tested are no-load, 3 kg, and 8 kg. The 5th-axis motor is tested under four levels of speeds, which are super high (S), high (H), medium (M), and low (L) corresponding to 4985, 3739, 2492, and 1247 r/min respectively. The 5-axis reduction ratio provided by the manufacturer is 84.1666.
+
 Dataset 1 can be used for:
 - **Exp. 1. Binary Health Classification**
 - **Exp. 2. Multi-Class Fault Identification Under Noise**
