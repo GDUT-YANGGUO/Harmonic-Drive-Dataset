@@ -4,7 +4,7 @@ Harmonic drives are precision components essential for motion performance in ind
 
 Existing studies often focus on individual components or artificially induced faults, which do not fully represent the complex operational behavior and fault modes of complete drives under actual working conditions.
 
-To address these gaps, this paper presents a systematic review of intelligent fault diagnosis and prognostics methods for harmonic drives. Furthermore, we release **GD-HDD**, among the first open-source, multimodal fault datasets for industrial robotic harmonic drives, collected and validated in collaboration with manufacturers.
+To address these gaps, we presents a systematic review of intelligent fault diagnosis and prognostics methods for harmonic drives. Furthermore, we release **GD-HDD**, among the first open-source, multimodal fault datasets for industrial robotic harmonic drives, collected and validated in collaboration with manufacturers.
 
 The dataset includes:
 - Synchronized vibration, servo motor, and high-precision metrology data
