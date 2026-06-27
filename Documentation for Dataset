@@ -1,47 +1,14 @@
-IV. HARMONIC DRIVES DATASET 
-A. Experimental Setup
-The experimental setup for fault diagnosis of harmonic drives used in industrial robots, as shown in Fig. 3, includes the following measuring instruments: SKF vibration analyzer, handheld vibration analyzer, wire-type analyzer for motion accuracy measurement, high-precision Renishaw laser tracker, and a certain model of servo drive supporting data read/write. In the experiments, in addition to collecting vibration signals under various working conditions, multimodal signals from the servo drive system itself were also collected, including position command value, actual position value, actual position following error value, actual speed feedback value, feedforward speed command value, torque command value, actual torque observation value, and torque current command value.
-Fig. 3. Vibration test platform for industrial robots.
-B. Dataset Description
-The harmonic drive dataset is composed of five different experimental datasets, with each briefly introduced as follows:
-1)	The dataset of Experiment 1 consists of vibration data under 12 different working conditions for various normal or faulty harmonic drives. These products were identified and labeled by the quality control department of an industrial robot manufacturer through standard testing procedures. The health state dataset of the harmonic drives is shown in Table IV.
-TABLE IV
-HEALTH STATE DATASET OF HARMONIC DRIVES
-Label	Health Description	Motor Speed (r/min)	Load (kg)	Number of Training Samples	Number of Testing Samples
-0	Normal	4985/3739/2492/1247	0/3/8	2945	820
-1	Abnormal	4985/3739/2492/1247	0/3/8	755	310
-In Table IV, normal data under different speed and load conditions are classified as category 0, while abnormal data under various working conditions are classified as category 1.
-2)	The dataset of Experiment 2 consists of 6 different types of fault data occurring under various testing conditions. The collected vibration signals are labeled, as shown in Table V.
-TABLE V
-DESCRIPTION OF THE HEALTH STATUS OF HARMONIC DRIVE 
-Class Label	Description of various health status signals
-0	Normal and noise<78db under various working conditions
-1	Jitter and noise>78db under 0kg&H speed condition
-2	Jitter and noise>78db under 3kg&H speed condition
-3	Jitter and noise>78db under 8kg&H speed condition
-4	Severe jitter and noise>78db under 0kg&S speed condition
-5	Jitter and noise>78db under 3kg&M speed condition
-6	Jitter and noise>78db under 3kg&S speed condition
-3)	The dataset of Experiment 3 consists of normal samples and various types of single fault and compound fault samples with abnormal vibration signals, as shown in Table VI.
-TABLE VI
-COMPOUND FAULT DATASET OF HARMONIC DRIVES
-Dataset	Speed	Label	Number of Samples
-Training Dataset	L/M/H/S	Normal/Fault 1/Fault 2/Fault 3	2850/2850/2850/2850
-Testing Dataset	L/M/H/S	Normal/Fault 1/Fault 2/Fault 3/Fault 1&2/Fault 1&3/Fault 2&3/Fault 1&2&3	1425/1425/1425/1425/1425/1425/1425/1425
-The training dataset consists of normal samples and various single-label faults (Fault 1, Fault 2, Fault 3). The testing dataset under different operating conditions includes normal, single fault, double-label compound fault (Fault 1&2, Fault 1&3, Fault 2&3), and triple-label compound fault samples (Fault 1&2&3). As a result, there are four health state categories in the training dataset and eight health state categories in the testing dataset.
-4)	The dataset of Experiment 4 consists of 6000 samples of servo system signals (motor current, torque, etc.) from harmonic drives, with 4000 samples in the training dataset containing various health states (including both labeled and unlabeled samples). The proportion of labeled samples in the training dataset is 0.5%, 1%, 2%, 4%, 6%, and 8%. The testing dataset consists entirely of unlabeled samples, with 2000 mixed samples of various health states, as shown in Table VII.
-TABLE VII
-HARMONIC DRIVE DATASET OF SERVO SYSTEM SIGNALS
-Dataset	Label Type	Labeling Rate (%)	Number of Samples
-Training Dataset	Normal, Fault 1, Fault 2, Fault 3	0.5, 1, 2, 4, 6, 8	4000
-Testing Dataset	Normal, Fault 1, Fault 2, Fault 3	Unlabeled	2000
-5)	The dataset of Experiment 5 includes vibration signals and various servo signals. The number of servo signal samples is 1700, 1600, 5000, and 5150, respectively. The ratio of samples in the training dataset to the testing dataset is 7:3. The experimental conditions are as follows: 1) Training and testing using only servo signals, only vibration signals, and both servo and vibration signals. 2) Training using both servo and vibration signals, but testing using only servo signals. 3) Training and testing using both servo and vibration signals. The details are shown in Table VIII.
-TABLE VIII
-THE MULTIMODAL SIGNAL DATASET FOR HARMONIC DRIVES
-Dataset	Data type	Label type	Total samples
-Training dataset	Vibration, ASFV, ATO, PTEAV, and TCCV	Normal, Fault 1, Fault 2, and Fault 3	10642
-Testing dataset	ASFV, ATO, PTEAV, and TCCV	Normal, Fault 1, Fault 2, and Fault 3	4215
-C. Usage Instructions
-We encourage researchers to utilize this dataset for research. 
-1) The dataset is available at https://github.com/GDUT-YANGGUO/Harmonic-Drive-Dataset.
-2) To use this dataset, proper citation of this review is required and it is intended for academic research purposes only.
+Harmonic drives are precision components essential for motion performance in industrial robots, yet their fault diagnosis remains underdeveloped due to a lack of comprehensive reviews and publicly available real-world data. Existing studies often focus on individual components or artificially induced faults, which do not fully represent the complex operational behavior and fault modes of complete drives under actual working conditions. To address these gaps, this paper presents a systematic review of intelligent fault diagnosis and prognostics methods for harmonic drives. Furthermore, we release GD-HDD, among the first open-source, multimodal fault datasets for industrial robotic harmonic drives, collected and validated in collaboration with manufacturers. The dataset includes synchronized vibration, servo motor, and high-precision metrology data across 12 operating conditions, covering 7 common faults, 3 dual compound faults, and 1 triple compound fault, along with associated technical documentation. By integrating a methodological review with a real-world benchmark dataset, this work aims to accelerate research and deployment of reliable health management systems for harmonic drives. 
+
+The Harmonic-Drive-Dataset mainly consists of 2 datasets, and these 2 datasets differ in terms of data type, data sampling frequency, fault type, and sample quantity.
+Dataset 1: It can be used for Exp. 1. Binary Health Classification and Exp. 2. Multi-Class Fault Identification Under Noise. The download link for this dataset is: xxxx1.
+Dataset 2: It can be used for Exp. 3. Compound Fault Diagnosis. Exp. 4. SemiSupervised and Few-Shot Learning
+Exp. 5. Multimodal Learning with Missing Modalities The website for downloading the dataset is: xxxx1.
+
+Dataset Access and Usage License
+The GD-HDD dataset is publicly released to advance research in intelligent fault diagnosis and PHM. 
+Access: The complete dataset, including sensor data, reports, and loader script, is available at: https://github.com/GDUT-YANGGUO/Harmonic-Drive-Dataset.
+License: The dataset is released for non-commercial, academic research purposes only. Use of the dataset requires citation of this article.
+
+The use of the dataset requires citing the following literature:
+G. Yang, Z. Zhao, Y. Deng, R. Du and Y. Zhong, "Artificial Intelligence for Fault Diagnosis in Harmonic Drives of Industrial Robots: A Comprehensive Real-World Dataset and a Review," in IEEE/ASME Transactions on Mechatronics, doi: 10.1109/TMECH.2026.3699839.
