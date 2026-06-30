@@ -37,7 +37,7 @@ Dataset 1 can be used for:
 - **Exp. 1. Binary Health Classification**
 - **Exp. 2. Multi-Class Fault Identification Under Noise**
 
-📥 **Download link**: [Download Dataset 1](https://pan.baidu.com/s/1ds8mO8smnVkFmTcC-XEChw?pwd=r9qu) — Access code: `r9qu`
+📥 **Download link**: [Download Dataset 1](https://pan.baidu.com/s/1ds8mO8smnVkFmTcC-XEChw?pwd=r9qu) — **Access code:** `r9qu`
 
 ---
 
@@ -81,7 +81,7 @@ Dataset 2 can be used for:
 - **Exp. 4. Semi-Supervised and Few-Shot Learning**
 - **Exp. 5. Multimodal Learning with Missing Modalities**
 
-📥 **Download link**: [Download Dataset 2](https://pan.baidu.com/s/18rAPZnf7yfrepi6iycIqLw) — Access code: `khfx`
+📥 **Download link**: [Download Dataset 2](https://pan.baidu.com/s/18rAPZnf7yfrepi6iycIqLw) — **Access code:** `khfx`
 
 ---
 
