@@ -61,9 +61,26 @@ Fig. 4.  Schematic diagram of the mechanical structure of an industrial robot.
 
 The schematic diagram of the industrial robot is shown in Fig. 4. The 1st axis, the 2nd axis, and the 3rd axis are driven by RV gears. The RV reducer has the characteristics of simple structure, high reliability, and few failures. The harmonic drives of the 4th axis, 5th axis and, 6th axis adopts the principle of harmonic transmission instead of gear transmission. The harmonic drive is composed of a wave generator, flexspline, and circular spline. It relies on the elastic deformation of the flexspline to realize movement transmission. Besides, the harmonic drive is extremely sensitive to the manufacturing process and assembly errors. Therefore, multiple harmonic drives of industrial robots sometimes will cause abnormal vibrations at the same time.
 
-The physical structures of the various types of harmonic drives in Fig. 4 are different, so their fault characteristics are also different. We use the frequency in Table II to observe their motion characteristics. The frequency spectrum of the collected vibration signal contains the frequency components of various parts, such as motor, pulley, camshaft, flexspline, and circular spline. The various input speeds of the motor will run under 3 different levels of payload (0/3/8Kg). In Table II, the motors used for driving have four speeds of 1247/2492/3739/4985 (r/min), corresponding to L/M/H/S respectively. These frequency components will be used for subsequent neural network analysis. The different types of harmonic drives are respectively installed in the 4th, 5th, and 6th axis of the industrial robot, and the reduction ratio of these products is 50/100/50 respective. Due to the consideration of external output connection (belt and pulley), the total revised reduction ratio of these products is 74.538/84.1666/50 respective.
+The physical structures of the various types of harmonic drives in Fig. 4 are different, so their fault characteristics are also different. We use the frequency in Table I to observe their motion characteristics. The frequency spectrum of the collected vibration signal contains the frequency components of various parts, such as motor, pulley, camshaft, flexspline, and circular spline. The various input speeds of the motor will run under 3 different levels of payload (0/3/8Kg). In Table I, the motors used for driving have four speeds of 1247/2492/3739/4985 (r/min), corresponding to L/M/H/S respectively. These frequency components will be used for subsequent neural network analysis. The different types of harmonic drives are respectively installed in the 4th, 5th, and 6th axis of the industrial robot, and the reduction ratio of these products is 50/100/50 respective. Due to the consideration of external output connection (belt and pulley), the total revised reduction ratio of these products is 74.538/84.1666/50 respective.
 
-### Sensors for Servo Systems — Multimodal Data
+### Table I Frequency Component Diagram of Vibration Acceleration
+
+| Model | Motor speed (r/min) | Motor base freq. (Hz) | Cam shaft base freq. (Hz) | Flexspline meshing freq. (Hz) | Circular spline base freq. (Hz) |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Model A** | 1247 | 20.78 | 13.94 | 56.32 | 0.28 |
+| | 2492 | 41.53 | 27.86 | 112.56 | 0.56 |
+| | 3739 | 62.32 | 41.80 | 168.88 | 0.84 |
+| | 4985 | 83.08 | 55.73 | 225.16 | 1.11 |
+| **Model B** | 1247 | 20.78 | 24.69 | 49.88 | 0.25 |
+| | 2492 | 41.53 | 49.35 | 99.68 | 0.49 |
+| | 3739 | 62.32 | 74.04 | 149.56 | 0.74 |
+| | 4985 | 83.08 | 98.71 | 199.40 | 0.99 |
+| **Model C** | 1247 | 20.78 | 20.78 | 83.96 | 0.42 |
+| | 2492 | 41.53 | 41.53 | 167.79 | 0.83 |
+| | 3739 | 62.32 | 62.32 | 251.76 | 1.25 |
+| | 4985 | 83.08 | 83.08 | 335.66 | 1.66 |
+
+### Table II Sensors for Servo Systems — Multimodal Data
 
 | Sensor | Data Type | Unit |
 | :--- | :--- | :---: |
