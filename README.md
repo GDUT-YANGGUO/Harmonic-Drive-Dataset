@@ -63,7 +63,7 @@ The schematic diagram of the industrial robot is shown in Fig. 4. The 1st axis, 
 
 The physical structures of the various types of harmonic drives in Fig. 4 are different, so their fault characteristics are also different. We use the frequency in Table I to observe their motion characteristics. The frequency spectrum of the collected vibration signal contains the frequency components of various parts, such as motor, pulley, camshaft, flexspline, and circular spline. The various input speeds of the motor will run under 3 different levels of payload (0/3/8Kg). In Table I, the motors used for driving have four speeds of 1247/2492/3739/4985 (r/min), corresponding to L/M/H/S respectively. These frequency components will be used for subsequent neural network analysis. The different types of harmonic drives are respectively installed in the 4th, 5th, and 6th axis of the industrial robot, and the reduction ratio of these products is 50/100/50 respective. Due to the consideration of external output connection (belt and pulley), the total revised reduction ratio of these products is 74.538/84.1666/50 respective.
 
-### Table I Frequency Component Diagram of Vibration Acceleration
+### Table I — Frequency Component Diagram of Vibration Acceleration
 
 | Model | Motor speed (r/min) | Motor base freq. (Hz) | Cam shaft base freq. (Hz) | Flexspline meshing freq. (Hz) | Circular spline base freq. (Hz) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -80,7 +80,7 @@ The physical structures of the various types of harmonic drives in Fig. 4 are di
 | | 3739 | 62.32 | 62.32 | 251.76 | 1.25 |
 | | 4985 | 83.08 | 83.08 | 335.66 | 1.66 |
 
-### Table II Sensors for Servo Systems — Multimodal Data
+### Table II — Sensors for Servo Systems — Multimodal Data
 
 | Sensor | Data Type | Unit |
 | :--- | :--- | :---: |
