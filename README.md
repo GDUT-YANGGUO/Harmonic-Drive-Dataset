@@ -87,10 +87,7 @@ Dataset 2 can be used for:
 
 ## 📄 Dataset Access and Usage License
 
-- **Access**: The complete dataset, including sensor data, reports, and loader script, is available at:  
-  https://github.com/GDUT-YANGGUO/Harmonic-Drive-Dataset
-
-- **License**: The dataset is released for non-commercial, academic research purposes only. Use of the dataset requires citation of this article.
-
-- **Citation**:
+- **License**: This dataset is released under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). 
+- **Access**: The complete dataset, including sensor data, reports, and loader script, is available at: https://github.com/GDUT-YANGGUO/Harmonic-Drive-Dataset
+- **Citation**: If you use this dataset, please cite the following paper:
   > G. Yang, Z. Zhao, Y. Deng, R. Du and Y. Zhong, "Artificial Intelligence for Fault Diagnosis in Harmonic Drives of Industrial Robots: A Comprehensive Real-World Dataset and a Review," in *IEEE/ASME Transactions on Mechatronics*, doi: 10.1109/TMECH.2026.3699839.
